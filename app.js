@@ -12,8 +12,8 @@ var app = express();
 
 // view engine setup
 app.engine('.hbs',expressHandlebars({
-	defaultLayout:'layouts',
-	extension:'.hbs'
+	defaultLayout:'layout',
+	extname:'.hbs'
 }));
 app.set('view engine', '.hbs');
 
