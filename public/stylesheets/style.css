@@ -65,7 +65,7 @@ a {
   padding: 5em 0em;
 }
 
-.secondary.network.menu .toc.item {
+.network.menu .toc.item {
   display: none;
 }
 
@@ -73,11 +73,11 @@ a {
   .ui.fixed.menu {
     display: none !important;
   }
-  .secondary.network.menu .item,
-  .secondary.network.menu .menu {
+  .network.menu .item,
+  .network.menu .menu {
     display: none;
   }
-  .secondary.network.menu .toc.item {
+  .network.menu .toc.item {
     display: block;
   }
   #masthead.segment {
