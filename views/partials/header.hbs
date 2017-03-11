@@ -2,9 +2,8 @@
   <div class="ui large top fixed hidden menu">
     <div class="ui container">
       <a class="ui header logo" href="/"><img src="/images/namilogo.svg">Nami</a>
-      <a class="active item">Inicio</a>
-      <a class="item">Contacto</a>
-      <a class="item">Informate</a>
+      <a class="active item" href="/">Inicio</a>
+      <a class="item" href="/nosotros">Informate</a>
       <div class="right menu">
         <div class="item">
           <a href="/usuarios/ingresar" class="ui green button">Entrar</a>
@@ -16,9 +15,8 @@
   <!-- Sidebar Menu -->
   <div class="ui vertical inverted sidebar menu">
     <a class="ui header logo" href="/"><img src="/images/namilogo.svg">Nami</a>
-    <a class="active item">Inicio</a>
-    <a class="item">Contacto</a>
-    <a class="item">Informate</a>
+    <a class="active item" href="/">Inicio</a>
+    <a class="item" href="/nosotros">Informate</a>
     <a href="/usuarios/ingresar" class="item">Entrar</a>
   </div>
 
@@ -31,6 +29,7 @@
           <div class="logonami">
             <a class="ui header logo" href="/"><img src="/images/namilogo.svg">Nami</a>
           </div>
+
           <a class="active item">Inicio</a>
           <a class="item">Contacto</a>
           <a class="item">Informate</a>
@@ -39,6 +38,10 @@
             <a href="/usuarios/salir" class="ui green button">Salir</a>
           </div>
           {{else}}
+
+          <a class="active item" href="/">Inicio</a>
+          <a class="item" href="/nosotros">Informate</a>
+
           <div class="right item">
             <a href="/usuarios/ingresar" class="ui green button">Entrar</a>
           </div>
