@@ -11,5 +11,8 @@ var psicologoSchema= new Schema({
     }
 
 });
-
+psicologoSchema.methods.stringToObject=function (str) {
+	// body...
+	return mongoose.Types.ObjectId(str);
+}
 module.exports=mongoose.model('PerfilPsicologo',psicologoSchema);

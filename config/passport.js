@@ -79,7 +79,7 @@ passport.use('local.signup', new localStrategy({
                 frutaColor: req.body.pregunta
             };
             newUser.rolUsuario = rol;
-            //console.log('\n 1'+newUser);
+            
             newUser.save(function(err, result) {
                 // body...
                 if (err) {
@@ -87,13 +87,13 @@ passport.use('local.signup', new localStrategy({
                  
                 }
                 return done(null, newUser);
-                console.log('aqui merengues 1');
+                
             }); 
         } else {
             newUser.user = username;
             newUser.password = newUser.encryptPassword(password);
             newUser.rolUsuario = req.body.rol;
-            //console.log('\n 2'+newUser);
+            
             newUser.save(function(err, result) {
                 // body...
                 if (err) {

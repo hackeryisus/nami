@@ -34,9 +34,15 @@
           <a class="active item">Inicio</a>
           <a class="item">Contacto</a>
           <a class="item">Informate</a>
+          {{#if login}}
+          <div class="right item">
+            <a href="/usuarios/salir" class="ui green button">Salir</a>
+          </div>
+          {{else}}
           <div class="right item">
             <a href="/usuarios/ingresar" class="ui green button">Entrar</a>
           </div>
+          {{/if}}
         </div>
       </div>
     </div>
