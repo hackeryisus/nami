@@ -104,6 +104,6 @@ a {
 }
 
 
-.imgtam{
-  width: 150px;
+.game_image{
+  max-height: 230px;
 }
