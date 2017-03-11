@@ -1,0 +1,66 @@
+<style>
+    #panel{
+		margin-top: 2em;
+		margin-bottom: 2em;
+
+	}
+</style>
+<div class="ui center aligned container" id="panel">
+    <h2 class="ui centered dividing header">
+        <i class="settings icon">
+        </i>
+        Perfil de usuario
+    </h2>
+    <div class="ui four column divided stackable grid ">
+        <div class="row">
+            <div class="column">
+                <h3>
+                    Acciones
+                </h3>
+                <a class="ui button" href="/usuarios/asociar-usuario">
+                    Asociar Usuario Por Codigo
+                </a>
+                <button class="ui button">
+                    Ver mis Usuarios Asociados
+                </button>
+            </div>
+            <div class="twelve wide column">
+            	<h3 class="ui centered header">Usuarios</h3>
+                <div class="container">
+                {{#each usuarios}}
+                    <div class="row">
+                        <div class="ui divided grid">
+                            <div class="four wide column">
+                                <div class="ui fluid card">
+                                    <div class="image">
+                                        <img src="https://s-media-cache-ak0.pinimg.com/736x/b1/d6/80/b1d68003859c67d0cec4d0e096a1a60c.jpg" />
+                                      
+                                    </div>
+                                    <div class="content">
+                                        <a class="header">
+                                            Nombre Usuario 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ten wide column">
+                            	<h3>Detalles: </h3>
+                            	<ul>
+                            		
+                            			<li>Edad: 10</li>                            			                            		
+										<button class="ui primary button" style="margin:auto;">
+											Ver Graficas 
+										</button>
+									
+                            		
+                            	</ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

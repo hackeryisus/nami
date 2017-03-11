@@ -1,1 +1,48 @@
-holiwis
+<style>
+	footer{
+		margin-top: 49.5em;
+
+	}
+	#juego{
+		margin-top: -5em;
+	}
+
+</style>
+
+<div class="ui container">
+    <div class="template">
+        <link href="/js/JuegoDosHack/TemplateData/style.css" rel="stylesheet"/>
+        <link href="/js/JuegoDosHack/TemplateData/favicon.ico" rel="shortcut icon"/>
+        <script src="/js/JuegoDosHack/TemplateData/UnityProgress.js">
+        </script>
+        <div class="template-wrap clear" id="juego">
+            <canvas class="emscripten" height="600px" id="canvas" oncontextmenu="event.preventDefault()" width="960px">
+            </canvas>
+            <br>
+                <div class="logo">
+                </div>
+                <div class="fullscreen">
+                    <img alt="Fullscreen" height="38" onclick="SetFullscreen(1);" src="/js/JuegoDosHack/TemplateData/fullscreen.png" title="Fullscreen" width="38"/>
+                </div>
+                <div class="title">
+                    RollerBall
+                </div>
+            </br>
+        </div>
+        <script type="text/javascript">
+            var Module = {
+			    TOTAL_MEMORY: 268435456,
+			    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+			    compatibilitycheck: null,
+			    backgroundColor: "#222C36",
+			    splashStyle: "Light",
+			    dataUrl: "/js/JuegoDosHack/Release/JuegoDosHack.data",
+			    codeUrl: "/js/JuegoDosHack/Release/JuegoDosHack.js",
+			    asmUrl: "/js/JuegoDosHack/Release/JuegoDosHack.asm.js",
+			    memUrl: "/js/JuegoDosHack/Release/JuegoDosHack.mem",
+			};
+        </script>
+        <script src="/js/JuegoDosHack/Release/UnityLoader.js">
+        </script>
+    </div>
+</div>
