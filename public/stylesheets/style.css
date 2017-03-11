@@ -93,19 +93,21 @@ a {
   }
 }
 
-.header.logo{
-  height: 30px;
-  img{
-    margin-top: 1em;
-    margin-right: 1em;
-    height: 80px;
-    width: auto;
-  }
+.logonami{
+  margin-top: 1em;
+   margin-right: 1em;
+  height: 50px;
 }
 
+#footernami{
+  background-image: url("/images/foot.png");
+  background-size: cover;
+  background-position: fixed;
+}
 
 .game_image{
   max-height: 230px;
+
 }
 
 #tutorsecction{
