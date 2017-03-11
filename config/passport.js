@@ -90,7 +90,7 @@ passport.use('local.signup', new localStrategy({
                 console.log('aqui merengues 1');
             }); 
         } else {
-            newUser.user = user;
+            newUser.user = username;
             newUser.password = newUser.encryptPassword(password);
             newUser.rolUsuario = req.body.rol;
             //console.log('\n 2'+newUser);
