@@ -1,6 +1,5 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -13,6 +12,8 @@ a {
 
 #masthead.segment {
   min-height: 700px;
+  background-image: url("/images/mainimage.png");
+  background-size: cover;
   padding: 1em 0em;
 }
 #masthead .logo.item img {
@@ -64,7 +65,7 @@ a {
   padding: 5em 0em;
 }
 
-.secondary.pointing.menu .toc.item {
+.secondary.network.menu .toc.item {
   display: none;
 }
 
@@ -72,11 +73,11 @@ a {
   .ui.fixed.menu {
     display: none !important;
   }
-  .secondary.pointing.menu .item,
-  .secondary.pointing.menu .menu {
+  .secondary.network.menu .item,
+  .secondary.network.menu .menu {
     display: none;
   }
-  .secondary.pointing.menu .toc.item {
+  .secondary.network.menu .toc.item {
     display: block;
   }
   #masthead.segment {
