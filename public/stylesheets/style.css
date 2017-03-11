@@ -15,6 +15,10 @@ a {
   background-image: url("/images/mainimage.png");
   background-size: cover;
   padding: 1em 0em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #masthead .logo.item img {
   margin-right: 1em;
@@ -91,11 +95,19 @@ a {
     margin-top: 0.5em;
     font-size: 1.5em;
   }
+
+
 }
 
 .logonami{
+  margin: 0 2em;
+  vertical-align: middle;
+}
+
+
+.logonami > a > img {
   margin-top: 1em;
-   margin-right: 1em;
+  margin-right: 1em;
   height: 50px;
 }
 
@@ -103,6 +115,8 @@ a {
   background-image: url("/images/foot.png");
   background-size: cover;
   background-position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .game_image{
@@ -112,4 +126,22 @@ a {
 
 .fontfooter{
   font-size: .7em;
+}
+
+#tutorsecction{
+  margin: 2em 0 2em;
+}
+
+#login{
+  border-radius: 1em;
+  margin: 4em 0 4em;
+  background-color: #DADADA;
+  height: 100%;
+  max-width: 450px;
+}
+
+@media only screen and (min-width: 700px) {
+  #login{
+    margin-bottom: 20em;
+  }
 }

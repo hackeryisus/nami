@@ -1,0 +1,133 @@
+<style type="text/css">
+    body {
+          background-color: #DADADA;
+        }
+          body > .grid {
+            height: 100%;
+          }
+          .image {
+            margin-top: -100px;
+          }
+          .column {
+            max-width: 450px;
+          }
+</style>
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <h2 class="ui teal image header">
+            <div class="content">
+                Acceder a tu Cuenta
+            </div>
+        </h2>
+        <form action="/usuarios/nueva-cuenta" class="ui large form" method="post">
+            <div class="ui stacked segment">
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon">
+                        </i>
+                        <input name="username" placeholder="Apodo" type="text">
+                        </input>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="lock icon">
+                        </i>
+                        <input name="password" placeholder="Contraseña" type="password">
+                        </input>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="lock icon">
+                        </i>
+                        <input name="pregunta" placeholder="Pregunta Secreta" type="text">
+                        </input>
+                    </div>
+                </div>
+                <div class="field">
+                   <!--  <div class="ui left icon input">
+                        <i class="lock icon">
+                        </i>
+                        <input name="genero" placeholder="Genero" type="text">
+                        </input>
+                    </div> -->
+                    <div class="ui selection dropdown">
+                      <div class="default text">Selecciona un genero</div>
+                      <i class="dropdown icon"></i>
+                      <input type="hidden" name="genero">
+                      <div class="menu">
+                        <div class="item" data-value="0">Niño</div>
+                        <div class="item" data-value="1">Niña</div>
+                      </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <!-- <div class="ui left icon input">
+                        <i class="lock icon">
+                        </i>
+                        <input name="edad" placeholder="edad" type="text">
+                        </input>
+                    </div> -->
+                    <div class="ui selection dropdown">
+                      <div class="default text">Selecciona tu edad</div>
+                      <i class="dropdown icon"></i>
+                      <input type="hidden" name="edad">
+                      <div class="menu">
+                            <div class="item" data-value="4">4</div>
+                            <div class="item" data-value="5">5</div>
+                            <div class="item" data-value="6">6</div>
+                            <div class="item" data-value="7">7</div>
+                            <div class="item" data-value="8">8</div>
+                            <div class="item" data-value="9">9</div>
+                            <div class="item" data-value="10">10</div>
+                            <div class="item" data-value="11">11</div>
+                            <div class="item" data-value="12">12</div>
+                            <div class="item" data-value="13">13</div>
+                    
+                      </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="lock icon">
+                        </i>
+                        <input name="rol" placeholder="rol" type="text">
+                        </input>
+                    </div>
+                </div>
+                <input class="ui fluid large teal submit button" type="submit" value="Entrar">
+                </input>
+            </div>
+            <input name="_csrf" type="hidden" value="{{csrfToken}}" />
+            
+        </form>
+        {{#if hasErrors}}
+            <div class="ui error message">
+                <div class="header">
+                    Error
+                </div>
+                <ul class="list">
+                    {{#each messages}}
+                        <li>
+                            {{this}}
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+           
+        {{/if}}
+         <div class="ui message">
+                No tienes una cuenta?
+                <a href="/users/register">
+                    Crear Cuenta
+                </a>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        // body...
+        $('.dropdown').dropdown();
+    });
+</script>
