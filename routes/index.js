@@ -8,7 +8,8 @@ router.get('/', function(req, res, next) {
 
 /* GET home page. */
 router.get('/tutor', function(req, res, next) {
-  res.render('tutor', { title: 'Tutor' });
+
+  res.render('tutor', { title: 'Tutor' ,usuario:req.user});
 });
 
 /* GET home page. */

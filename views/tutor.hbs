@@ -1,3 +1,21 @@
+<script>
+    $(document).ready(function () {
+      //body...
+      $('#recomendacion').click(function(event){
+          event.preventDefault();
+          var text=$('textarea').val();
+          //console.log(text);
+          $('ul').append('<li>'+text+'</li>');
+      });
+      $('#comentar').click(function(event){
+          event.preventDefault();
+          var text=$('#comentario').val();
+          $('tbody').append('<tr><td class="right aligned collapsing">Psicologo</td><td>'+text+'</td><td class="collapsing"><i class="calendar icon"></i>11/03/2017</td></tr>');
+      });
+    });
+
+</script>
+
 
 <div id="tutorsecction" class="ui container">
   <h1 class="ui  horizontal divider center aligned header"> Reporte de datos </h1>
@@ -43,16 +61,21 @@
           </table>
 
           <div class="ui action input">
-            <input type="text" placeholder="Haz una observación...">
-            <button class="ui button">Comentar</button>
+            <input type="text" placeholder="Haz una observación..." id="comentario">
+            <button class="ui primary button" id="comentar">Comentar</button>
+
           </div>
         </section>
 
         <section>
+
           <h2>Recomendaciones</h2>
-          <p class="">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+              <ul></ul>
           </p>
+          <textarea  id="" cols="30" rows="10" class=""></textarea>
+
+          <button class="ui primary button" id="recomendacion">Recomendacion</button>
         </section>
       </div>
       <div class="column">
