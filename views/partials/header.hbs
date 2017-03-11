@@ -29,19 +29,13 @@
           <div class="logonami">
             <a class="ui header logo" href="/"><img src="/images/namilogo.svg">Nami</a>
           </div>
-
           <a class="active item">Inicio</a>
-          <a class="item">Contacto</a>
-          <a class="item">Informate</a>
+          <a class="item" href="/nosotros">Informate</a>
           {{#if login}}
           <div class="right item">
             <a href="/usuarios/salir" class="ui green button">Salir</a>
           </div>
           {{else}}
-
-          <a class="active item" href="/">Inicio</a>
-          <a class="item" href="/nosotros">Informate</a>
-
           <div class="right item">
             <a href="/usuarios/ingresar" class="ui green button">Entrar</a>
           </div>
