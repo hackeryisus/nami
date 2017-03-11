@@ -94,8 +94,14 @@ a {
 }
 
 .logonami{
+  margin-right: 2em;
+  vertical-align: middle;
+}
+
+
+.logonami > a > img {
   margin-top: 1em;
-   margin-right: 1em;
+  margin-right: 1em;
   height: 50px;
 }
 
